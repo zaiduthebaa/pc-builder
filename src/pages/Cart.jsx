@@ -1,21 +1,24 @@
 import React from "react";
-import { Navbar } from "../components";
-import { useSelector, useDispatch } from "react-redux";
-import { addCart, delCart } from "../redux/action";
+import { Navbar } from "../components"; // Import the Navbar component
+import { useSelector, useDispatch } from "react-redux"; // Import Redux hooks
+import { addCart, delCart } from "../redux/action"; // Import Redux actions
 import { Link } from "react-router-dom";
 
+// Define the Cart component
 const Cart = () => {
+  // Get the cart state from the Redux store
   const state = useSelector((state) => state.handleCart);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // Create a dispatch function to dispatch Redux actions
 
+  // Define a component for an empty cart
   const EmptyCart = () => {
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
             <h4 className="p-3 display-5">Your Cart is Empty</h4>
-            <Link to="/" className="btn  btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i>Continue Shopping
+            <Link to="/" className="btn btn-outline-dark mx-4">
+              <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
           </div>
         </div>
@@ -23,22 +26,28 @@ const Cart = () => {
     );
   };
 
+  // Define a function to add an item to the cart
   const addItem = (product) => {
-    dispatch(addCart(product));
+    dispatch(addCart(product)); // Dispatch the addCart action with the selected product
   };
 
+  // Define a function to remove an item from the cart
   const removeItem = (product) => {
-    dispatch(delCart(product));
+    dispatch(delCart(product)); // Dispatch the delCart action with the selected product
   };
 
+  // Define a component to display the cart with items
   const ShowCart = () => {
     let subtotal = 0;
     let totalItems = 0;
+
+    // Calculate subtotal and total number of items in the cart
     state.map((item) => {
       subtotal += item.price * item.qty;
       totalItems += item.qty;
       return null;
     });
+
     return (
       <>
         <section className="h-100 gradient-custom">
@@ -149,15 +158,15 @@ const Cart = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar /> {/* Render the Navbar component */}
       <div className="container my-3 py-3">
         <h1 className="text-center">Cart</h1>
         <hr />
-        {state.length > 0 ? <ShowCart /> : <EmptyCart />}
+        {state.length > 0 ? <ShowCart /> : <EmptyCart />} {/* Conditionally render ShowCart or EmptyCart */}
       </div>
     </>
   );
 };
 
-export default Cart;
+export default Cart; // Export the Cart component
 

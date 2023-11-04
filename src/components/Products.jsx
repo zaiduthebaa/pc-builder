@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { addCart } from '../redux/action';
-import { Link } from 'react-router-dom';
-const productData = require('../products.json');
+import { useDispatch } from 'react-redux'; // Import the useDispatch function from react-redux
+import { addCart } from '../redux/action'; // Import the addCart action
+import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
+const productData = require('../products.json'); // Load product data from an external JSON file
 
+// Create a functional component called "Products"
 const Products = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState([]);
-  const [categoryFilter, setCategoryFilter] = useState('All');
-  const [typeFilter, setTypeFilter] = useState('All');
-  const [sortOption, setSortOption] = useState('asc_title'); // Default to ascending by title
+  // Define state variables using the useState hook
+  const [data, setData] = useState([]); // Store the product data
+  const [filter, setFilter] = useState([]); // Store the filtered and sorted product data
+  const [categoryFilter, setCategoryFilter] = useState('All'); // Store the selected category filter
+  const [typeFilter, setTypeFilter] = useState('All'); // Store the selected type filter
+  const [sortOption, setSortOption] = useState('asc_title'); // Store the selected sorting option (default to ascending by title)
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // Get the Redux dispatch function
 
+  // Function to add a product to the cart
   const addProductToCart = (product) => {
     dispatch(addCart(product));
   };
 
+  // useEffect to load the initial product data when the component mounts
   useEffect(() => {
     const fetchData = async () => {
       setData(productData);
@@ -25,9 +29,10 @@ const Products = () => {
 
     fetchData();
 
-    return () => {};
+    return () => {}; // Cleanup function (empty in this case)
   }, []);
 
+  // useEffect to filter and sort products based on user-selected options
   useEffect(() => {
     // Filter products based on category and type
     const filteredData = data.filter((product) => {
@@ -36,7 +41,7 @@ const Products = () => {
       return categoryMatch && typeMatch;
     });
 
-    // Sort products based on the selected option
+    // Sort products based on the selected sorting option
     const sortedData = [...filteredData];
 
     if (sortOption === 'asc_title') {
@@ -44,17 +49,19 @@ const Products = () => {
     } else if (sortOption === 'desc_title') {
       sortedData.sort((a, b) => b.title.localeCompare(a.title));
     } else if (sortOption === 'asc_price') {
-      sortedData.sort((a, b) => a.price - b.price);
+      sortedData.sort((a, b) => a.cost - b.cost);
     } else if (sortOption === 'desc_price') {
-      sortedData.sort((a, b) => b.price - a.price);
+      sortedData.sort((a, b) => b.cost - a.cost);
     }
 
-    setFilter(sortedData);
+    setFilter(sortedData); // Update the filtered and sorted data
   }, [data, categoryFilter, typeFilter, sortOption]);
 
+  // Define options for filtering categories and types
   const categoryOptions = ['All', 'Gaming', 'Business'];
   const typeOptions = ['All', 'PC', 'Laptop', 'Accessories'];
 
+  // Create a component for displaying the products
   const ShowProducts = () => {
     return (
       <div className="row">
@@ -67,7 +74,7 @@ const Products = () => {
                 <p className="card-text">{product.description}</p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item lead">Starting from Rs. {product.price}</li>
+                <li className="list-group-item lead">Starting from Rs. {product.cost}</li>
               </ul>
               <div className="card-body">
                 <Link to={`/product/${product.id}`} className="btn btn-dark m-1">
@@ -84,6 +91,7 @@ const Products = () => {
     );
   };
 
+  // Render the main component
   return (
     <div className="container my-3 py-3">
       <div className="row">
@@ -143,10 +151,10 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <ShowProducts />
+      <ShowProducts /> {/* Display the product cards */}
     </div>
   );
 };
 
-export default Products;
+export default Products; // Export the Products component
 
