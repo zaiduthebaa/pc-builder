@@ -2191,7 +2191,7 @@
     "type": "Accessories",
     "description": "Precision Mouse",
     "imgurl1": "/assets/imgs/accessories/bm1.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "42",
@@ -2201,7 +2201,7 @@
     "type": "Accessories",
     "description": "Premium Mouse",
     "imgurl1": "/assets/imgs/accessories/bm2.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "43",
@@ -2211,7 +2211,7 @@
     "type": "Accessories",
     "description": "Executive Mouse",
     "imgurl1": "/assets/imgs/accessories/bm3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "44",
@@ -2221,7 +2221,7 @@
     "type": "Accessories",
     "description": "Dominate with Precision",
     "imgurl1": "/assets/imgs/accessories/gm1.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "45",
@@ -2231,7 +2231,7 @@
     "type": "Accessories",
     "description": "Unleash your Potential",
     "imgurl1": "/assets/imgs/accessories/gm2.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "46",
@@ -2241,7 +2241,7 @@
     "type": "Accessories",
     "description": "Uncompromised Precision",
     "imgurl1": "/assets/imgs/accessories/gm3.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "47",
@@ -2251,7 +2251,7 @@
     "type": "Accessories",
     "description": "Conquer the Worlds",
     "imgurl1": "/assets/imgs/accessories/gk1.png",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "48",
@@ -2261,7 +2261,7 @@
     "type": "Accessories",
     "description": "Navigate through the Cosmos",
     "imgurl1": "/assets/imgs/accessories/gk2.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "49",
@@ -2271,7 +2271,7 @@
     "type": "Accessories",
     "description": "Unleash your Move",
     "imgurl1": "/assets/imgs/accessories/gk3.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "50",
@@ -2281,7 +2281,7 @@
     "type": "Accessories",
     "description": "Efficiency at your Fingertips",
     "imgurl1": "/assets/imgs/accessories/bk1.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "51",
@@ -2291,7 +2291,7 @@
     "type": "Accessories",
     "description": "Unmatched Precision",
     "imgurl1": "/assets/imgs/accessories/bk2.avif",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "52",
@@ -2301,7 +2301,7 @@
     "type": "Accessories",
     "description": "Keys to Success",
     "imgurl1": "/assets/imgs/accessories/bk3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "53",
@@ -2311,7 +2311,7 @@
     "type": "Accessories",
     "description": "Connect to Success",
     "imgurl1": "/assets/imgs/accessories/bh1.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "54",
@@ -2321,7 +2321,7 @@
     "type": "Accessories",
     "description": "Sound of Quality",
     "imgurl1": "/assets/imgs/accessories/bh2.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "55",
@@ -2331,7 +2331,7 @@
     "type": "Accessories",
     "description": "Your Voice, Your Command",
     "imgurl1": "/assets/imgs/accessories/bh3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "56",
@@ -2341,7 +2341,7 @@
     "type": "Accessories",
     "description": "Celestial Symphony",
     "imgurl1": "/assets/imgs/accessories/gh1.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "57",
@@ -2351,7 +2351,7 @@
     "type": "Accessories",
     "description": "Dive into Immersive Play",
     "imgurl1": "/assets/imgs/accessories/gh2.png",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "58",
@@ -2361,7 +2361,7 @@
     "type": "Accessories",
     "description": "Echoes of Brilliance",
     "imgurl1": "/assets/imgs/accessories/gh3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "59",
@@ -2371,7 +2371,7 @@
     "type": "Accessories",
     "description": "Glide to Victory",
     "imgurl1": "/assets/imgs/accessories/gmp1.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "60",
@@ -2381,7 +2381,7 @@
     "type": "Accessories",
     "description": "Game with Precision Control",
     "imgurl1": "/assets/imgs/accessories/gmp2.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "61",
@@ -2391,7 +2391,7 @@
     "type": "Accessories",
     "description": "Navigate the Stars",
     "imgurl1": "/assets/imgs/accessories/gmp3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "62",
@@ -2401,7 +2401,7 @@
     "type": "Accessories",
     "description": "Pulse of Productivity",
     "imgurl1": "/assets/imgs/accessories/bmp1.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "63",
@@ -2411,7 +2411,7 @@
     "type": "Accessories",
     "description": "Elegance meets Efficiency",
     "imgurl1": "/assets/imgs/accessories/bmp2.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   },
   {
     "id": "64",
@@ -2421,6 +2421,6 @@
     "type": "Accessories",
     "description": "Shape your Path",
     "imgurl1": "/assets/imgs/accessories/bmp3.webp",
-    "cpu": "","gpu":"","ram":"","storage":""
+    "cpu": [{}],"gpu":[{}],"ram":[{}],"storage":[{}]
   }
 ]

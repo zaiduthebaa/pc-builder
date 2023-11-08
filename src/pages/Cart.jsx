@@ -43,7 +43,7 @@ const Cart = () => {
 
     // Calculate subtotal and total number of items in the cart
     state.map((item) => {
-      subtotal += item.price * item.qty;
+      subtotal += item.cost * item.qty;
       totalItems += item.qty;
       return null;
     });
@@ -111,7 +111,7 @@ const Cart = () => {
                               <p className="text-start text-md-center">
                                 <strong>
                                   <span className="text-muted">{item.qty}</span>{" "}
-                                  x Rs. {item.price}
+                                  x Rs. {item.cost}
                                 </strong>
                               </p>
                             </div>

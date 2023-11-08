@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 const productsData = require("../products.json");
 
@@ -67,7 +67,7 @@ const Config = () => {
   };
 
   // Calculate the configured price based on the difference between selected and default options
-  const getConfiguredPrice = () => {
+  const getConfiguredPrice = useCallback(() => {
     if (productsData[id - 1]) {
       const product = productsData[id - 1];
       let configuredPrice = parseFloat(product.cost); // Initialize with the product's cost
@@ -92,13 +92,13 @@ const Config = () => {
       return configuredPrice;
     }
     return 0;
-  };
+  }, [id, selectedSpecifications]);
 
   const [configuredPrice, setConfiguredPrice] = useState(getConfiguredPrice());
 
   useEffect(() => {
     setConfiguredPrice(getConfiguredPrice());
-  }, [selectedSpecifications, id]);
+  }, [selectedSpecifications, id, getConfiguredPrice]);
 
   return (
     <div className="container mt-4 mb-5">
